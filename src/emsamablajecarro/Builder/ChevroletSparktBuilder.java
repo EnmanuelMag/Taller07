@@ -44,5 +44,4 @@ public class ChevroletSparktBuilder extends CarroBuilder{
     public void definirMotor() {
         this.c.setMotor(1.2f);
     }
-
 }

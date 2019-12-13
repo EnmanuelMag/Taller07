@@ -16,12 +16,14 @@ public class Carro {
     private String marca;
     private String modelo;
     private float motor;
+    private double precio;
 
-    public Carro(int almacenamiento, String placa, String marca, String modelo, float motor) {
+    public Carro(int almacenamiento, String placa, String marca, String modelo, float motor,double precio) {
         this.almacenamiento = almacenamiento;
         this.carroceria = placa;
         this.marca = marca;
         this.modelo = modelo;
+        this.precio = precio;
     }
 
     public Carro() {
@@ -70,6 +72,14 @@ public class Carro {
 
     public float getMotor() {
         return motor;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
     }
 
     public void setMotor(float motor) {
